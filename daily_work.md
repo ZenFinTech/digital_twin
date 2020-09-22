@@ -12,3 +12,6 @@
 2. npm / cnpm 作用
 https://www.jianshu.com/p/f581cf9360a2  
 
+3. No module named SimpleHTTPServer
+python3 启动 simpleHTTPServer
+python -m http.server 1234
