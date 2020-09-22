@@ -8,3 +8,7 @@
 #### 经验教训 
 1. Missing write access to /usr/local/lib/node_modules， NPM ERROR    
 命令加个 sudo 即可   
+
+2. npm / cnpm 作用
+https://www.jianshu.com/p/f581cf9360a2  
+
