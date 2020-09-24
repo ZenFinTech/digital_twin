@@ -33,5 +33,6 @@ python -m http.server 1234
 1. 开始针对cseiumJS的viewer进行实验了解，去除@copyright信息   
 2. 发现目前效率可以提升的点，并且尝试找出可以提升效率的措施      
 3. 隐藏版权信息， webConsole里面输入以下code，即可看到效果    
-viewer._cesiumWidget._creditContainer.style.display="none"
+viewer._cesiumWidget._creditContainer.style.display="none"      
+4.
 
