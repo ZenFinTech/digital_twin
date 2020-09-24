@@ -35,5 +35,11 @@ python -m http.server 1234
 3. 隐藏版权信息， webConsole里面输入以下code，即可看到效果    
 viewer._cesiumWidget._creditContainer.style.display="none" // copyright       
 viewer.timeline.container.style.display="none" // timeline     
-4.
-
+### 2020-09-25
+Cesium的源码结构    
+1. Source/Widgets 主要存放的就是Cesium的UI控件；      
+2. Source/DataSource 主要存放Entity和DataSource相关最接近用户使用的API，包括geojson的加载等等     
+3. Source/Scene 则是建立的一个三维场景，并提供基础的三维图元     
+4. Source/Renderer 则是对WebGL底层函数的封装      
+5. Source/Core 各种算法、基础类       
+6. Source/Workers 工作线程，主要用于几何体的创建   
