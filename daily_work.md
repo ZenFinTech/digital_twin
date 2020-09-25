@@ -46,4 +46,4 @@ viewer.timeline.container.style.display="none" // timeline
 
 #### 将Cesium 的 HelloWorld 弄清爽，主要显示地球
 需要阅读Cesium doc文档，viewer    
-结合附件cesium_widget.png会理解得更好
+将构造函数的代码，结合附件cesium_widget.png会理解得更直观
