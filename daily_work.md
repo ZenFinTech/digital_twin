@@ -45,4 +45,5 @@ viewer.timeline.container.style.display="none" // timeline
 6. Source/Workers 工作线程，主要用于几何体的创建   
 
 #### 将Cesium 的 HelloWorld 弄清爽，主要显示地球
-需要阅读Cesium doc文档，viewer部分   
+需要阅读Cesium doc文档，viewer    
+结合附件cesium_widget.png会理解得更好
