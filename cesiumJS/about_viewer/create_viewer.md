@@ -39,3 +39,7 @@ indicates current time and allows users to jump to a specific time using the scr
 展示当前时间和允许用户在进度条上拖动到任何一个指定的时间
 ##### FullscreenButton 
 Makes the Viewer fullscreen. 全屏按钮
+
+___
+##### doc
+https://cesium.com/docs/cesiumjs-ref-doc/Viewer.html?classFilter=viewer
