@@ -50,4 +50,5 @@ viewer.timeline.container.style.display="none" // timeline
 
 ### 2020-09-26
 #### Cesium 日照阴影效果
+#### Cesium 通过Entity添加立方体
 
