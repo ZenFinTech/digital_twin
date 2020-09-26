@@ -1,3 +1,4 @@
+``` javascript
 var viewer = new Cesium.Viewer("cesiumContainer", {
         animation : false,
         vrButton : true,
@@ -5,7 +6,7 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
         infoBox : false, 
         timeline : false,
       });     
-
+```  
 与 html的id为 cesiumContainer 绑定     
 
 
