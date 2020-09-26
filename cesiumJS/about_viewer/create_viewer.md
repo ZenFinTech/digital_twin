@@ -1,3 +1,5 @@
+创建一个viewer，与 html的id为 cesiumContainer 绑定
+
 ``` javascript
 var viewer = new Cesium.Viewer("cesiumContainer", {
         animation : false,
@@ -7,7 +9,7 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
         timeline : false,
       });     
 ```  
-与 html的id为 cesiumContainer 绑定     
+     
 
 
 Geocoder : A location search tool that flies the camera to queried location. Uses Bing Maps data by default.   
