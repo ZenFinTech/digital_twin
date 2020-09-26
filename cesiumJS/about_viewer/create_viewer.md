@@ -14,17 +14,17 @@ var viewer = new Cesium.Viewer("cesiumContainer", {
 
 ##### Geocoder
 A location search tool that flies the camera to queried location. Uses Bing Maps data by default.      
-一种地理位置搜索工具，用于显示相机访问的地理位置。默认使用微软的Bing地图
+地理位置查询定位控件。默认使用微软的Bing地图
 
 ##### HomeButton
 Flies the viewer back to a default view.      
-首页位置，点击之后将视图跳转到默认视角    
+首页位置，默认相机位置    
 ##### SceneModePicker 
 Switches between 3D, 2D and Columbus View (CV) modes.    
-切换2D、3D 和 Columbus View (CV) 模式   
+切换2D、3D 和 哥伦布模式   
 ##### BaseLayerPicker 
 Chooses the imagery and terrain to display on the globe.   
-选择三维数字地球的底图（imagery and terrain）   
+选择三维数字地球的底图（地形，影像）（imagery and terrain）   
 ##### NavigationHelpButton 
 Displays the default camera controls.    
 帮助提示，如何操作数字地球     
@@ -33,12 +33,13 @@ Controls the play speed for view animation.
 控制视窗动画的播放速度      
 ##### CreditsDisplay 
 Displays data attributions. Almost always required!     
-展示商标版权和数据源     
+展示商标版权属性    
 ##### Timeline
 indicates current time and allows users to jump to a specific time using the scrubber.   
-展示当前时间和允许用户在进度条上拖动到任何一个指定的时间
+时间滚动条
 ##### FullscreenButton 
-Makes the Viewer fullscreen. 全屏按钮
+Makes the Viewer fullscreen.      
+全屏切换
 
 ___
 ##### doc
