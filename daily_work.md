@@ -60,5 +60,5 @@ viewer.timeline.container.style.display="none" // timeline
 #### 火星开发资料
 http://cesium.marsgis.cn/doc.html     
 通过config.json的配置信息，mars将相关信息转化为cesium的实例化（极大概率是这么做的）
-#### 本地run起火星的project
+#### 本地run火星的project
 
