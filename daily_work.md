@@ -57,3 +57,6 @@ viewer.timeline.container.style.display="none" // timeline
 ### 2020-09-27
 #### 着手开始了解火星科技的方案
 浏览 https://github.com/muyao1987 木遥的一些技术repo
+#### 火星开发资料（二次开发的需要付费）
+http://cesium.marsgis.cn/doc.html  
+
