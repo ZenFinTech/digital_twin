@@ -65,4 +65,6 @@ viewer.shadows = true;
 http://cesium.marsgis.cn/doc.html     
 通过config.json的配置信息，mars将相关信息转化为cesium的实例化（极大概率是这么做的）
 #### 本地run火星的project
+#### 阅读Sandcastle ceiusm的例子代码
+https://sandcastle.cesium.com/index.html 
 
