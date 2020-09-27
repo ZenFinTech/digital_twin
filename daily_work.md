@@ -58,5 +58,7 @@ viewer.timeline.container.style.display="none" // timeline
 #### 着手开始了解火星科技的方案
 浏览 https://github.com/muyao1987 木遥的一些技术repo
 #### 火星开发资料
-http://cesium.marsgis.cn/doc.html  
+http://cesium.marsgis.cn/doc.html     
+通过config.json的配置信息，mars将相关信息转化为cesium的实例化（极大概率是这么做的）
+#### 本地run起火星的project
 
