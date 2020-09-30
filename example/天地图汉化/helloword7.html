@@ -30,16 +30,7 @@
     <div id="cesiumContainer"></div>
     <script>
       var token = "0b018552994f71a9467d24461a8f8238";
-      var tiandituImageryProvider = new Cesium.WebMapTileServiceImageryProvider({
-        url: "http://t0.tianditu.gov.cn/img_c/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=c&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=" + token,
-        format: 'tiles',
-        tileMatrixSetID: 'c',
-        tilingScheme: new Cesium.GeographicTilingScheme(),
-        tileMatrixLabels: ['1', '2', '3', '4','5', '6', '7', '8', '9', '10','11','12', '13', '14', '15', '16', '17', '18'],
-        layer: "tdtImgAnnoLayer",
-        style: "default",
-         show: false
-      });
+      
 
       var viewer = new Cesium.Viewer("cesiumContainer", {
         animation : false,
@@ -47,8 +38,6 @@
         geocoder : true,
         infoBox : false, 
         timeline : false,
-        imageryProvider: tiandituImageryProvider,
-
       });
       viewer._cesiumWidget._creditContainer.style.display="none";
 
