@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8" />
+    <!-- Tell IE to use the latest, best version. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <title>Hello World!</title>
+    <script src="../Cesium/Cesium.js"></script>
+    <link></link>
+    <style>
+      @import url(../Cesium/Widgets/widgets.css);
+      html,
+      body,
+      #cesiumContainer {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cesiumContainer"></div>
+    <script>
+      var token = "0b018552994f71a9467d24461a8f8238";
+      var tiandituImageryProvider = new Cesium.WebMapTileServiceImageryProvider({
+        url: "http://t0.tianditu.gov.cn/img_c/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=c&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=" + token,
+        format: 'tiles',
+        tileMatrixSetID: 'c',
+        tilingScheme: new Cesium.GeographicTilingScheme(),
+        tileMatrixLabels: ['1', '2', '3', '4','5', '6', '7', '8', '9', '10','11','12', '13', '14', '15', '16', '17', '18'],
+        layer: "tdtImgAnnoLayer",
+        style: "default",
+         show: false
+      });
+
+      var viewer = new Cesium.Viewer("cesiumContainer", {
+        animation : false,
+        vrButton : true,
+        geocoder : true,
+        infoBox : false, 
+        timeline : false,
+        imageryProvider: tiandituImageryProvider,
+
+      });
+      viewer._cesiumWidget._creditContainer.style.display="none";
+
+      viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
+        url: "http://t0.tianditu.gov.cn/cia_c/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cia&tileMatrixSet=c&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=" + token,
+        format: 'tiles',
+        tileMatrixSetID: 'c',
+        tilingScheme: new Cesium.GeographicTilingScheme(),
+        tileMatrixLabels: ['1', '2', '3', '4','5', '6', '7', '8', '9', '10','11','12', '13', '14', '15', '16', '17', '18'],
+        layer: "tdtImgAnnoLayer",
+        style: "default",
+        show: false
+      }));
+
+
+      /* 三维球转动添加监听事件 */
+      viewer.camera.changed.addEventListener(function (percentage) {
+        getCenterPosition();
+        getCurrentExtent();
+        // 打印中心点坐标、高度、当前范围坐标
+        console.log(getCenterPosition());
+        console.log("bounds",getCurrentExtent());
+      });
+ 
+      /* 获取camera高度  */
+      function getHeight() {
+        if (viewer) {
+          var scene = viewer.scene;
+          var ellipsoid = scene.globe.ellipsoid;
+          var height = ellipsoid.cartesianToCartographic(viewer.camera.position).height;
+          return height;
+        }
+      }
+ 
+      /* 获取camera中心点坐标 */
+      function getCenterPosition() {
+        var result = viewer.camera.pickEllipsoid(new Cesium.Cartesian2(viewer.canvas.clientWidth / 2, viewer.canvas.clientHeight / 2));
+        var curPosition = Cesium.Ellipsoid.WGS84.cartesianToCartographic(result);
+        var lon = curPosition.longitude * 180 / Math.PI;
+        var lat = curPosition.latitude * 180 / Math.PI;
+        var height = getHeight();
+        return {
+          lon: lon,
+          lat: lat,
+          height: height
+        };
+      }
+ 
+      function getCurrentExtent() {
+        // 范围对象
+        var extent = {};
+ 
+        // 得到当前三维场景
+        var scene = viewer.scene;
+ 
+        // 得到当前三维场景的椭球体
+        var ellipsoid = scene.globe.ellipsoid;
+        var canvas = scene.canvas;
+ 
+        // canvas左上角
+        var car3_lt = viewer.camera.pickEllipsoid(new Cesium.Cartesian2(0, 0), ellipsoid);
+ 
+        // canvas右下角
+        var car3_rb = viewer.camera.pickEllipsoid(new Cesium.Cartesian2(canvas.width, canvas.height), ellipsoid);
+ 
+        // 当canvas左上角和右下角全部在椭球体上
+        if (car3_lt && car3_rb) {
+          var carto_lt = ellipsoid.cartesianToCartographic(car3_lt);
+          var carto_rb = ellipsoid.cartesianToCartographic(car3_rb);
+          extent.xmin = Cesium.Math.toDegrees(carto_lt.longitude);
+          extent.ymax = Cesium.Math.toDegrees(carto_lt.latitude);
+          extent.xmax = Cesium.Math.toDegrees(carto_rb.longitude);
+          extent.ymin = Cesium.Math.toDegrees(carto_rb.latitude);
+        }
+ 
+        // 当canvas左上角不在但右下角在椭球体上
+        else if (!car3_lt && car3_rb) {
+          var car3_lt2 = null;
+          var yIndex = 0;
+          do {
+            // 这里每次10像素递加，一是10像素相差不大，二是为了提高程序运行效率
+            yIndex <= canvas.height ? yIndex += 10 : canvas.height;
+            car3_lt2 = viewer.camera.pickEllipsoid(new Cesium.Cartesian2(0, yIndex), ellipsoid);
+          } while (!car3_lt2);
+          var carto_lt2 = ellipsoid.cartesianToCartographic(car3_lt2);
+          var carto_rb2 = ellipsoid.cartesianToCartographic(car3_rb);
+          extent.xmin = Cesium.Math.toDegrees(carto_lt2.longitude);
+          extent.ymax = Cesium.Math.toDegrees(carto_lt2.latitude);
+          extent.xmax = Cesium.Math.toDegrees(carto_rb2.longitude);
+          extent.ymin = Cesium.Math.toDegrees(carto_rb2.latitude);
+        }
+ 
+        // 获取高度
+        extent.height = Math.ceil(viewer.camera.positionCartographic.height);
+        return extent;
+      }
+    </script>
+  </body>
+</html>
