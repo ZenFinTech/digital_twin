@@ -30,17 +30,16 @@
     <div id="cesiumContainer"></div>
     <script>
       var token = "0b018552994f71a9467d24461a8f8238";
-      
-
       var viewer = new Cesium.Viewer("cesiumContainer", {
         animation : false,
         vrButton : true,
         geocoder : true,
         infoBox : false, 
         timeline : false,
+        // imageryProvider: tiandituImageryProvider,
       });
       viewer._cesiumWidget._creditContainer.style.display="none";
-
+      
       viewer.imageryLayers.addImageryProvider(new Cesium.WebMapTileServiceImageryProvider({
         url: "http://t0.tianditu.gov.cn/cia_c/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cia&tileMatrixSet=c&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=" + token,
         format: 'tiles',
