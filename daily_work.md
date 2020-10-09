@@ -73,3 +73,8 @@ http://cesium.marsgis.cn/doc.html
 #### 阅读Sandcastle ceiusm的例子代码
 https://sandcastle.cesium.com/index.html 
 
+### 2020-09-28
+本地有2个web server    
+a.提供瓦片数据的静态web服务器（一般使用tomcat，内网）    
+b.cesium httpserver （一般使用nginx，接入外网）     
+imageryProvider设置瓦片数据的静态web服务器      
