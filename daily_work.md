@@ -77,4 +77,15 @@ https://sandcastle.cesium.com/index.html
 本地有2个web server    
 a.提供瓦片数据的静态web服务器（一般使用tomcat，内网）    
 b.cesium httpserver （一般使用nginx，接入外网）     
-imageryProvider设置瓦片数据的静态web服务器      
+imageryProvider设置瓦片数据的静态web服务器         
+
+terrainProvider 地形图()   
+imageryLayers  底图    
+
+```
+Scene 场景渲染监听事件触发顺序   
+viewer.scene.preUpdate
+viewer.scene.postUpdate   
+viewer.scene.preRender   
+viewer.scene.postRender   
+```
