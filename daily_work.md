@@ -1,17 +1,17 @@
-### 2020-09-21
+### 2020-09-21    
 1.大概阅读cseiumJS的文档，有趣而有雄心的team，名字源于铯原子钟，digital_twin
 
-### 2020-09-22
+### 2020-09-22   
 1.macbook 安装 nodejs环境   
 2.安装cseiumJS     
 3.cseiumJS  HelloWorld          
 
 
-#### 经验教训 
+#### 经验教训    
 1. Missing write access to /usr/local/lib/node_modules， NPM ERROR    
 命令加个 sudo 即可   
 
-2. npm / cnpm 作用
+2. npm / cnpm 作用   
 https://www.jianshu.com/p/f581cf9360a2  
 
 3. No module named SimpleHTTPServer    
@@ -47,6 +47,11 @@ viewer.timeline.container.style.display="none" // timeline
 #### 将Cesium 的 HelloWorld 弄清爽，主要显示地球
 需要阅读Cesium doc文档，viewer    
 将构造函数的代码，结合附件cesium_widget.png会理解得更直观
+```
+1. 引入 Cesium库的js和css    
+2. 建立渲染地球的div容器(含css)
+3. 调用Cesium.viewer() API 渲染地球
+```
 
 ### 2020-09-26
 #### Cesium 日照阴影效果
