@@ -96,5 +96,6 @@ viewer.scene.postRender
 2. 基础底图，叠加底图   
 3. 获取某个当前视角信息   
 4. 配置3dtiles模型的贴地效果/高度比例    
+5. 不同的widget之间的数据传输通信
 
 ```
