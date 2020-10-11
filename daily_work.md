@@ -89,3 +89,10 @@ viewer.scene.postUpdate
 viewer.scene.preRender   
 viewer.scene.postRender   
 ```
+### 2020-10-11
+观看Mars3D的视频资料
+```
+1. 图层视角定位/自定义
+2. 基础底图，叠加底图
+
+```
