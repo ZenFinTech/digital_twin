@@ -109,4 +109,5 @@ viewer.scene.postRender
 
 [gpu memory hierarchy](https://www.cnblogs.com/xiaopu2019/p/11071883.html)
 
+cesium 空间对象可视化 2类接口 :  entity ,  primitive
 
