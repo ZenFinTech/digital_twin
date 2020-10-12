@@ -99,3 +99,8 @@ viewer.scene.postRender
 5. 不同的widget之间的数据传输通信
 
 ```
+初步对齐优化任务目标（详细见chanllenge.md）   
+
+### 2020-10-12  
+Render in Cesium Stack   
+https://cesium.com/blog/2015/05/15/graphics-tech-in-cesium-architecture/   
