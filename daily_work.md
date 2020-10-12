@@ -12,7 +12,7 @@
 命令加个 sudo 即可   
 
 2. npm / cnpm 作用   
-https://www.jianshu.com/p/f581cf9360a2  
+[如何使用NPM？CNPM又是什么?](https://www.jianshu.com/p/f581cf9360a2)  
 
 3. No module named SimpleHTTPServer    
 python3 启动 simpleHTTPServer    
@@ -102,11 +102,9 @@ viewer.scene.postRender
 初步对齐优化任务目标（详细见chanllenge.md）   
 
 ### 2020-10-12  
-Render in Cesium Stack   
-https://cesium.com/blog/2015/05/15/graphics-tech-in-cesium-architecture/    
+[Render in Cesium Stack](https://cesium.com/blog/2015/05/15/graphics-tech-in-cesium-architecture)    
 大概率，需要关注cesium的 Render ，Scence模块
 
-gpu memory hierarchy    
-https://www.cnblogs.com/xiaopu2019/p/11071883.html
+[gpu memory hierarchy](https://www.cnblogs.com/xiaopu2019/p/11071883.html)
 
 
