@@ -118,4 +118,7 @@ Primitives are lower-level graphical elements within Cesium, and Entities are bu
 
 
 ### 2020-10-13 
-[LOD模型](https://www.cnblogs.com/yejianyong/p/10864969.html)
+[LOD模型, level of detail](https://www.cnblogs.com/yejianyong/p/10864969.html)
+```
+近大远小，近精远糊
+```
