@@ -115,3 +115,7 @@ Primitives are lower-level graphical elements within Cesium, and Entities are bu
 ```
 
 [Primitive渲染流程](https://www.codetd.com/article/11417274)  (暂且只能仅供参考)
+
+
+### 2020-10-13 
+[LOD模型](https://www.cnblogs.com/yejianyong/p/10864969.html)
