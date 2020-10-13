@@ -152,3 +152,7 @@ https://test-sz.muqiangyun.cn
 七牛云地址
 image.platform.smartfacade.com.cn
 服务器  广东汕头 电信  
+```
+后台mysql设计表，存储3dtiles地址
+前台页面，根据勾选区域，ajax请求到后台，后台过滤返回3dtiles地址，浏览器render
+```
