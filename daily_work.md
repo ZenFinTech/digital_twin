@@ -122,6 +122,9 @@ Primitives are lower-level graphical elements within Cesium, and Entities are bu
 ```
 近大远小，近精远糊
 ```
-cesium 数据源处理软件cc(ContextCapture)
+cesium 数据源处理软件CC(ContextCapture)
 [ContextCapture ,3D Reality Modeling Software](https://www.bentley.com/en/products/brands/contextcapture)
 [ContextCapture user guide](https://docs.bentley.com/LiveContent/web/ContextCapture%20Help-v10/en/GUID-1D6739CD-B03D-4AFE-B6FA-6AF73D5476E1.html)
+
+工作流程     
+拍摄照片（街道，区域，楼宇）-> CC处理得到3D数据模型 -> cesium加载显示
