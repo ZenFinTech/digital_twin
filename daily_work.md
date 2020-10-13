@@ -128,9 +128,9 @@ cesium 数据源处理软件CC(ContextCapture)
 
 工作流程     
 拍摄img（街道，区域，楼宇）[空中三角测量,Aerial triangulation](https://baike.baidu.com/item/%E7%A9%BA%E4%B8%AD%E4%B8%89%E8%A7%92%E6%B5%8B%E9%87%8F)    
-&ensp;&ensp;  -> CC处理img得到3DTILES模型数据      
-&ensp;&ensp;&ensp;&ensp;      -> 3DTILES模型数据本地上传七牛云      
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;          -> cesium加载模型显示(七牛云的地址)          
+&emsp;  -> CC处理img得到3DTILES模型数据      
+&emsp;&emsp;      -> 3DTILES模型数据本地上传七牛云      
+&emsp;&emsp;&emsp;          -> cesium加载模型显示(七牛云的地址)          
 ```
 此处只是知识了解，稍微梳理清楚大概逻辑即可
 ContextCapture Center Engine ?? 软件作用？？
