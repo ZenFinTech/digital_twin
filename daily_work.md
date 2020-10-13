@@ -132,5 +132,7 @@ cesium 数据源处理软件CC(ContextCapture)
       -> 3DTILES模型数据本地上传七牛云      
           -> cesium加载模型显示(七牛云的地址)      
 ```
-[空中三角测量,Aerial triangulation](https://baike.baidu.com/item/%E7%A9%BA%E4%B8%AD%E4%B8%89%E8%A7%92%E6%B5%8B%E9%87%8F)
+空中三角测量,Aerial triangulation
+https://baike.baidu.com/item/%E7%A9%BA%E4%B8%AD%E4%B8%89%E8%A7%92%E6%B5%8B%E9%87%8F
+
 ```
