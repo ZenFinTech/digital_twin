@@ -127,4 +127,7 @@ cesium 数据源处理软件CC(ContextCapture)
 [ContextCapture user guide](https://docs.bentley.com/LiveContent/web/ContextCapture%20Help-v10/en/GUID-1D6739CD-B03D-4AFE-B6FA-6AF73D5476E1.html)
 
 工作流程     
-拍摄照片（街道，区域，楼宇）-> CC处理得到3D数据模型 -> cesium加载显示
+拍摄照片（街道，区域，楼宇）    
+  -> CC处理得到3D数据模型
+      -> 3D模型数据本地上传七牛云
+          -> cesium加载模型显示
