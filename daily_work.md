@@ -167,3 +167,5 @@ https://cesium.com/docs/cesiumjs-ref-doc/Primitive.html?classFilter=primi
 
 Entity  add , remove   
 Primitive   add , remove    
+
+[Entity , Primitive 加载模型对比](https://www.cnblogs.com/flypopo/p/9796430.html)
