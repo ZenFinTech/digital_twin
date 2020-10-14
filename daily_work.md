@@ -156,3 +156,14 @@ image.platform.smartfacade.com.cn
 后台mysql设计表，存储3dtiles地址
 前台页面，根据勾选区域，ajax请求到后台，后台过滤返回3dtiles地址，浏览器render
 ```
+
+### 2020-10-14
+Entity    
+https://cesium.com/docs/cesiumjs-ref-doc/Entity.html?classFilter=Entit   
+
+Primitive
+https://cesium.com/docs/cesiumjs-ref-doc/Primitive.html?classFilter=primi    
+
+
+Entity  add , remove   
+Primitive   add , remove    
