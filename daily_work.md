@@ -169,3 +169,9 @@ Entity  add , remove
 Primitive   add , remove    
 
 [Entity , Primitive 加载模型对比](https://www.cnblogs.com/flypopo/p/9796430.html)
+
+### 2020-10-15
+再次对齐了信息和破局方向，关键点如下：    
+1. 希望用cesium完成标绘，将cesium的黑箱打开一定的深度        
+2. WebGL，Browser 是否有控制开关，充分利用 GPU，显存，共享内存等   
+3. Mars3D 不用太关注
