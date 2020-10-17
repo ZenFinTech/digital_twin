@@ -11,4 +11,4 @@ viewer.entities.add({
        }
    });
 ```
-透明度为0.5的红色
+以上代码为绘制一个半透明的红色椭圆，设置material为Cesium.Color.RED.withAlpha(0.5)透明度为0.5的红色
