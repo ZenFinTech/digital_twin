@@ -45,7 +45,11 @@
       ellipse: {
         semiMinorAxis: 250000.0,
         semiMajorAxis: 400000.0,
+        height: 200000,
         material: Cesium.Color.RED.withAlpha(0.5),
+        outline: true,
+        outlineColor: Cesium.Color.BLUE.withAlpha(0.6),
+        outlineWidth: 10,
       }
     });
     viewer.camera.flyTo({
