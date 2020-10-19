@@ -179,3 +179,17 @@ Primitive   add , remove
 ### 2020-10-16
 [3d tiles流式加载性能的优化](https://github.com/CesiumGS/cesium/pull/7774)
 
+```
+将所有加载优先级相关的属性合并成一个单一数字用来排序。   
+目前涉及的属性有：depth(深度), distance to camera(到相机的距离), screen space error (SSE), foveated measurement(偏离中心距离测量), progressive resolution(渐进式分辨率), preload flight(预加载飞行), foveated deferral(布尔值，表示偏离中心的瓦片是否延迟加载)   
+```
+
+```
+瓦片请求裁切操作的优化，主要包括：
+视域之外的瓦片请求；
+根据相机飞行路径预测在短时间内将移出屏幕的瓦片请求；
+屏幕边缘的瓦片可能会延迟加载；
+飞行过程中的瓦片请求优化是很有必要的。否则在带宽小的情况下很容易出现，需要看的瓦片刚加载成功，相机已飞离的持续尴尬和死循环状态。
+
+
+```
