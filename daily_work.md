@@ -175,3 +175,7 @@ Primitive   add , remove
 1. 希望用cesium完成标绘，将cesium的黑箱打开一定的深度        
 2. WebGL，Browser 是否有控制开关，充分利用 GPU，显存，共享内存等   
 3. Mars3D 不用太关注
+
+### 2020-10-16
+[3d tiles流式加载性能的优化](https://github.com/CesiumGS/cesium/pull/7774)
+
