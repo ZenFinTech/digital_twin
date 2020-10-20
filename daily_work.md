@@ -193,3 +193,14 @@ Primitive   add , remove
 
 
 ```
+
+### 2020-10-17
+cesium 相关的论文
+
+### 2020-10-19
+[scene rendering performance tuning](https://cesium.com/blog/2018/01/24/cesium-scene-rendering-performance)
+```
+viewer.scene.debugShowFramesPerSecond = true; // 
+viewer#requestRenderMode   
+scene#requestRenderMode   
+```
