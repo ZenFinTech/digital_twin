@@ -204,3 +204,6 @@ viewer.scene.debugShowFramesPerSecond = true; //
 viewer#requestRenderMode   
 scene#requestRenderMode   
 ```
+
+### 2020-10-20
+cesium的camera，以及键盘事件的响应，随着camera缩放，图形渲染
