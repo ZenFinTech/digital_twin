@@ -9,3 +9,6 @@ complete 参数，setTimeout定时器
 ## 设置视图到某区域
 flytTo   
 destination 指向 Rectangle
+
+___
+[Cesium  Camera](aa)
