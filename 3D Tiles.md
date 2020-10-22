@@ -27,7 +27,7 @@
 层次加载 ， 跳跃式加载   
 
 ### 瓦片的状态
-5种状态
+6种状态
 + UNLOADED
 + LOADING
 + PROCESSING
