@@ -12,6 +12,8 @@
 + 屏幕空间误差ScreenSpaceError(SSE)衡量模型的精度   
 + DFS + BFS 查找瓦片节点   
 + 跳跃式加载提升层级瓦片的加载速度   
-
+### ScreenSpaceError [0 , 正无穷大)
+0,加载3dtiles所有叶子节点 
+数值越大，越模糊
 ## ref
 [3D Tiles Format Specification](https://github.com/CesiumGS/3d-tiles/tree/master/specification)
