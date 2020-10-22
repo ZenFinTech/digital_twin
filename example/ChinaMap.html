@@ -110,7 +110,6 @@
             "keydown",
             function (e) {
                 var flagName = getFlagForKeyCode(e.keyCode);
-                console.log(flagName + ' \n');
                 if (typeof flagName !== "undefined") {
                     flags[flagName] = true;
                 }
@@ -122,7 +121,6 @@
             "keyup",
             function (e) {
                 var flagName = getFlagForKeyCode(e.keyCode);
-                console.log(flagName + ' \n');
                 if (typeof flagName !== "undefined") {
                     flags[flagName] = false;
                 }
