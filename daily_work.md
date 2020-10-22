@@ -207,3 +207,6 @@ scene#requestRenderMode
 
 ### 2020-10-20
 cesium的camera，以及键盘事件的响应，随着camera缩放，图形渲染
+
+### 2020-10-21
+3D Tiles数据加载渲染算法策略
