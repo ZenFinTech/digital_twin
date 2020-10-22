@@ -9,7 +9,7 @@
 [3dTile 数据文件格式说明](https://blog.csdn.net/Rsoftwaretest/article/details/90667628)
 
 ## 加载策略(粗糙)
-+ ScreenSpaceError(SSE)衡量模型的精度   
++ 屏幕空间误差ScreenSpaceError(SSE)衡量模型的精度   
 + DFS + BFS 查找瓦片节点   
 + 跳跃式加载提升层级瓦片的加载速度   
 
