@@ -1,4 +1,8 @@
-function getPosition() {
+/*
+parameter: viewer 全局的viewer对象
+*/
+
+getPosition = (viewer) => {
             //得到当前三维场景
             var scene = viewer.scene;
             //得到当前三维场景的椭球体
@@ -8,8 +12,8 @@ function getPosition() {
                     show: false
                 }
             });
-            var longitudeString = null;
-            var latitudeString = null;
+            var longitudeStr = null;
+            var latitudeStr = null;
             var height = null;
             var cartesian = null;
             // 定义当前场景的画布元素的事件处理
