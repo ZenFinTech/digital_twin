@@ -16,5 +16,24 @@
 取值范围 0 ～ 正无穷大   
 0,加载3dtiles所有叶子节点    
 数值越大，越模糊   
+
+### cesium 加载策略
+4个队列   
++ desiredTiles
++ requestedTiles
++ processingQueue
++ selectedTiles
+
+层次加载 ， 跳跃式加载   
+
+### 瓦片的状态
+5种状态
++ UNLOADED
++ LOADING
++ PROCESSING
++ READY
++ EXPIRED
++ FAILED
+
 ## ref
 [3D Tiles Format Specification](https://github.com/CesiumGS/3d-tiles/tree/master/specification)
