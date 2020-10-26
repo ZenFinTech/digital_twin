@@ -209,4 +209,14 @@ scene#requestRenderMode
 cesium的camera，以及键盘事件的响应，随着camera缩放，图形渲染
 
 ### 2020-10-21
-3D Tiles数据加载渲染算法策略
+3D Tiles数据加载渲染算法策略    
+FPS(Frame Per Second), 可视区域的图像每秒钟被渲染并刷新的次数，反应了三维场景动画的流畅程度，FPS越低用户体验越卡顿    
+如果要三维动画场景流畅，FPS 不应低于 30     
+
+SSE(Seperate Space ERROR)  三维场景渲染精度    
+
+
+
+### 2020-10-22   
+
+
